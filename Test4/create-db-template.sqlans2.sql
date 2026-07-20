@@ -1,0 +1,23 @@
+CREATE DATABASE CompanyDB;
+
+USE CompanyDB;
+
+CREATE TABLE Student (
+    StudentID INT,
+    Name VARCHAR(50),
+    Course VARCHAR(50),
+    Marks INT
+);
+
+INSERT INTO Student
+VALUES
+(101,'Rahul','Python',80),
+(102,'Priya','Java',75),
+(103,'Aman','Python',90),
+(104,'Neha','SQL',70);
+
+SELECT * FROM Student;
+
+SELECT Name, Marks FROM Student;
+
+SELECT Course FROM Student;
